@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os, sys
 import time
+import shutil
 
 errors = []
 
@@ -111,7 +112,7 @@ def install():
         sys.exit(1)
 
 def cleanup():
-    os.remove("raspad-auto-rotator")
+    shutil.rmtree("raspad-auto-rotator")
 
 class Modules(object):
     ''' 
